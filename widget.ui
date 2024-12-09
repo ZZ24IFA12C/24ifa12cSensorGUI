@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>223</width>
-    <height>208</height>
+    <width>185</width>
+    <height>192</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="btnBeenden">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>170</y>
+     <x>10</x>
+     <y>160</y>
      <width>80</width>
      <height>24</height>
     </rect>
@@ -26,13 +26,36 @@
     <string>Beenden</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="edtEingabe">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>100</y>
-     <width>113</width>
+     <x>10</x>
+     <y>130</y>
+     <width>171</width>
      <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAction">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Action!</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="edtAusgabe">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>171</width>
+     <height>111</height>
     </rect>
    </property>
   </widget>
