@@ -1,10 +1,13 @@
 #include "model.h"
-
+#include "temperatursensor.h"
 Model::Model() {}
 
-void Model::update()
+void Model::update(string str)
 {
-
+    if( str == "ADDTEMP" )
+    {
+        sensoren.append(new TemperaturSensor);
+    }
 }
 
 string Model::getState()

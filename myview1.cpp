@@ -18,7 +18,7 @@ void MyView1::notify()
 
 void MyView1::addSensor()
 {
-    string str;
+    string str = "ADDFEUCHTE";
     if(widget->ui->btnTemperatur->isChecked())
         str = "ADDTEMP";
 
