@@ -7,6 +7,7 @@
 
 class MyView1 : public View
 {
+     Q_OBJECT
 public:
     MyView1();
     void update();

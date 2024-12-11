@@ -1,5 +1,6 @@
 #include "model.h"
 #include "temperatursensor.h"
+#include <QDebug>
 Model::Model() {}
 
 void Model::update(string str)
@@ -8,6 +9,7 @@ void Model::update(string str)
     {
         sensoren.append(new TemperaturSensor);
     }
+    qDebug()<< sensoren.front()->getSensorType();
 }
 
 string Model::getState()

@@ -1,9 +1,9 @@
 #ifndef VIEW_H
 #define VIEW_H
-#include "controller.h"
-
+#include <QObject>
+class Controller;
 class Model;
-class View
+class View: public QObject
 {
 public:
     View();
