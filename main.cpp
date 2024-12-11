@@ -1,16 +1,25 @@
-#include "widget.h"
-#include "temperatursensor.h"
+#include "controller.h"
+#include "model.h"
+#include "view.h"
+#include "myview1.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Widget w;
 
-    TemperaturSensor *t = new TemperaturSensor;
-    w.setDataGate(t);
+    Controller *c = new Controller;
+    Model *m = new Model;
+    View *v = new MyView1;
 
-    w.show();
+    c->setView(v);
+    c->setModel(m);
+    m->setView(v);
+    v->setModel(m);
+    v->setController(c);
+
+
+
     return a.exec();
 }

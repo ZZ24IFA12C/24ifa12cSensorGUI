@@ -37,3 +37,4 @@ void Widget::action()
         ui->edtAusgabe->append(num.setNum( werte[i] ));
 
 }
+

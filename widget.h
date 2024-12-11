@@ -13,7 +13,7 @@ QT_END_NAMESPACE
 class Widget : public QWidget
 {
     Q_OBJECT
-
+    friend class MyView1;
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
